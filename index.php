@@ -45,11 +45,10 @@
                     $stmt->bindValue(3, $job);
                     $stmt->bindValue(4, $date);
                     $stmt->execute();
+		    echo "<h3>Anda telah terdaftar!</h3>";
                 } catch(Exception $e) {
                     echo "Failed: " . $e;
                 }
-
-                echo "<h3>Anda telah terdaftar!</h3>";
             } else if (isset($_POST['load_data'])) {
                 try {
                     $sql_select = "SELECT * FROM Applicants";
