@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/materialize.min.css">
-
+    <style>
+	    .mb-100{
+		margin-bottom: 100px;
+	    }
+    </style>
 </head>
 
 <body>
@@ -56,7 +60,7 @@
                     $applicantsRow = $stmt->fetchAll(); 
                     if(count($applicantsRow) > 0) {
                         echo "<h2>Yang Sudah Terdaftar:</h2>";
-                        echo "<table class='responsive-table'>";
+                        echo "<table class='responsive-table mb-100'>";
                         echo "<tr><th>Nama</th>";
                         echo "<th>Email</th>";
                         echo "<th>Pekerjaan</th>";
